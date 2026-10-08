@@ -1,0 +1,14 @@
+{
+  "name": "fallow-private-method-coverage",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "coverage": "vitest --run --coverage",
+    "health": "fallow health --coverage coverage/coverage-final.json --max-crap 5 --max-cyclomatic 3 --format json"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "4.1.11",
+    "fallow": "3.32.0",
+    "vitest": "4.1.11"
+  }
+}
