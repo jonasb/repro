@@ -1,0 +1,13 @@
+{
+  "name": "bombadil-worker-window",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "node server.mjs",
+    "test": "bombadil browser test --headless --time-limit 10s --exit-on-violation http://127.0.0.1:8765/ spec.ts",
+    "test:inline-only": "bombadil browser test --headless --time-limit 10s --exit-on-violation --instrument-javascript inline http://127.0.0.1:8765/ spec.ts"
+  },
+  "devDependencies": {
+    "@antithesishq/bombadil": "0.7.10"
+  }
+}
